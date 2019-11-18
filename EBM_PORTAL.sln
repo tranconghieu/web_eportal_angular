@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{7A31E8AE-4649-43BA-9E9D-61FA85929220}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EBM.Presentation.Web", "Presentation\EBM.Presentation.Web\EBM.Presentation.Web.csproj", "{EA428F09-BCFC-495A-8366-319820649A2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EBM.Presentation.WebApi", "Presentation\EBM.Presentation.WebApi\EBM.Presentation.WebApi.csproj", "{B1250618-7049-4AF8-B8A3-4AE53A3107AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA428F09-BCFC-495A-8366-319820649A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA428F09-BCFC-495A-8366-319820649A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA428F09-BCFC-495A-8366-319820649A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA428F09-BCFC-495A-8366-319820649A2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1250618-7049-4AF8-B8A3-4AE53A3107AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1250618-7049-4AF8-B8A3-4AE53A3107AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1250618-7049-4AF8-B8A3-4AE53A3107AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1250618-7049-4AF8-B8A3-4AE53A3107AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA428F09-BCFC-495A-8366-319820649A2F} = {7A31E8AE-4649-43BA-9E9D-61FA85929220}
+		{B1250618-7049-4AF8-B8A3-4AE53A3107AB} = {7A31E8AE-4649-43BA-9E9D-61FA85929220}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {030E9115-C734-4FEB-A38D-221EF09BADF8}
+	EndGlobalSection
+EndGlobal

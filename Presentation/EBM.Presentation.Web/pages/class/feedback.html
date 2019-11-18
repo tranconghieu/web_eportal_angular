@@ -1,0 +1,291 @@
+﻿<div id="feedback">
+    <div class="title text-center ">
+        <h2><img src="../Content/images/images.png" width="60" height="60"> Feedback</h2>
+    </div>
+    <!--Tạo link feedback-->
+    <div class="new-feedback">
+        <a href="newfeedback" data-toggle="modal" data-target="#newfeedback">
+            <i class="fas fa-plus-circle"></i> Tạo
+            Feedback
+        </a>
+    </div>
+
+
+    <!--Feedback-content-->
+    <div id="feedback-content">
+        <ul class="nav nav-tabs">
+            <li class="nav-item "><a class="nav-link active" data-toggle="tab" data-target="#teacher">Giáo viên</a></li>
+            <li class="nav-item">
+                <a class="nav-link" id="link_tab_center" data-toggle="tab" data-target="#center">
+                    Trung
+                    tâm
+                </a>
+            </li>
+        </ul>
+        <br>
+        <div class="tab-content">
+
+            <!--Giáo viên -->
+            <div id="teacher" class="tab-pane active">
+                <div class="feedback-content">
+
+                    <!--Lựa chọn và tìm kiếm-->
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">
+                        Tìm
+                        kiếm&nbsp;<i class="fas fa-sort-down"></i>
+                    </button>
+                    <div class="feedback-select collapse" id="demo">
+
+                        <!--Tìm theo tên giáo viên + ngày-->
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="cb-teacher">
+                                    <input id="combobox" class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="cb-calendar">
+                                    <input class="datepicker form-control" value='11/1/2019' title="datepicker" style="width: 100%" />
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="search">
+                                    <div class="form-group ">
+                                        <!-- <div class="input-group-prepend">
+                                          <span class="input-group-text"><i class="fas fa-search"></i></span>
+                                        </div> -->
+                                        <input type="text" class="form-control" placeholder="Search">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--danh sách feedback-->
+                    <div class="list-feedback">
+                        <div id="gridteacher"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Trung tâm-->
+            <div id="center" class="tab-pane fade">
+                <div class="feedback-content">
+
+                    <!--Lựa chọn và tìm kiếm-->
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">
+                        Tìm
+                        kiếm&nbsp;<i class="fas fa-sort-down"></i>
+                    </button>
+                    <div class="feedback-select collapse" id="demo">
+
+                        <!--Tìm theo tên giáo viên + ngày-->
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="cb-calendar">
+                                    <input class="datepicker form-control" value='11/1/2019' title="datepicker" style="width: 100%" />
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="search">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--danh sách feedback-->
+                    <div class="list-feedback">
+                        <div id="gridcenter"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- model add feedback -->
+<div class="modal fade" id="newfeedback" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Tạo FeedBack</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                    x
+                </button>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label>Tiêu đề:</label>
+                        <input id="newfeedback-title" class="form-control ">
+                    </div>
+                    <div class="form-group">
+                        <label>Đối tượng: </label><br>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 "  id="feedback-content-input">
+                                <input id="combobox-feedback" class="form-control" style="width: 100%">
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <input id="combobox-feedbackteacher" class="form-control" disabled="disabled" style="width: 100%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Nội dung:</label><br>
+                        <textarea class="form-control" rows="5" id="newfeedback-content"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-block btn-success" data-dismiss="modal">Gửi</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        setTimeout(function () {
+            var height_conten = $(window).height() - $("#gridteacher").offset().top - 20 - 50;
+            (height_conten <= 360) && (height_conten = 360);
+            $('#gridteacher').css({ height: height_conten + 'px' });
+            $("#gridteacher").getKendoGrid().resize();
+        }, 600)
+        // doc du lieu grid trung tam khi chuyen tab
+        $('#link_tab_center').click(function () {
+            $("#gridcenter").data('kendoGrid').dataSource.read();
+            //debugger
+            setTimeout(function () {
+                var height_conten = $(window).height() - $("#gridcenter").offset().top - 20 - 50;
+                (height_conten <= 360) && (height_conten = 360);
+                $('#gridcenter').css({ height: height_conten + 'px' });
+                $("#gridcenter").getKendoGrid().resize();
+            }, 300)
+        })
+
+        $("#gridcenter").kendoGrid({
+            dataSource: {
+                type: "odata",
+                transport: {
+                    read: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+                },
+                pageSize: 20
+            },
+            height: 300,
+            autoBind: false,
+            sortable: true,
+            resizable: true,
+            pageable: {
+                refresh: true,
+                pageSizes: true,
+                buttonCount: 5
+            },
+            columns: [{
+                field: "STT",
+                title: "STT",
+                width: 50
+            }, {
+                field: "CustomerID",
+                title: "Ngày",
+                width: 150
+            }, {
+                field: "CompanyName",
+                title: "Tiêu đề",
+                width: 200
+            }, {
+                field: "Address",
+                title: "Nội dung",
+
+            }]
+        });
+
+
+        $("#gridteacher").kendoGrid({
+            dataSource: {
+                type: "odata",
+                data: [],
+                transport: {
+                    read: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+                },
+                pageSize: 20
+            },
+            height: 350,
+            sortable: true,
+            pageable: {
+                refresh: true,
+                pageSizes: true,
+                buttonCount: 5
+            },
+            columns: [{
+                field: "STT",
+                title: "STT",
+                width: 50
+            }, {
+                field: "CustomerID",
+                title: "Ngày",
+                width: 150
+            }, {
+                field: "City",
+                title: "Giáo viên",
+                width: 150
+            }, {
+                field: "CompanyName",
+                title: "Tiêu đề",
+                width: 200
+            }, {
+                field: "ContactTitle",
+                title: "Nội dung",
+
+            }]
+        });
+
+        // create DatePicker from input HTML element
+        $(".datepicker").kendoDatePicker();
+
+        $("#monthpicker").kendoDatePicker({
+            // defines the start view
+            start: "year",
+
+            // defines when the calendar should return date
+            depth: "year",
+
+            // display month and year in the input
+            format: "dd/MM/yyyy",
+
+            // specifies that DateInput is used for masking the input element
+            dateInput: true
+
+        });
+
+
+
+        $("#combobox").kendoComboBox({
+            autoWidth: true,
+
+            placeholder: "Giáo viên ",
+            dataSource: {
+                data: ["Alex", "Karik", "John", "Soda"]
+            }
+        });
+        $("#combobox-feedback").kendoComboBox({
+            //autoWidth: true,
+            placeholder: "Vui lòng chọn ",
+            dataSource: {
+                data: ["Giáo Viên", "Trung tâm"]
+            }
+        });
+        $("#combobox-feedbackteacher").kendoComboBox({
+            // autoWidth: true,
+
+            placeholder: "Vui lòng chọn ",
+            dataSource: {
+                data: ["Karik", "John", "Alex", "Soda"]
+            }
+        });
+
+
+    });
+</script>

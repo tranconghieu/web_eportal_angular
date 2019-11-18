@@ -1,0 +1,694 @@
+
+/* HieuTran */
+
+
+#content{
+
+}
+.header_top {
+    /*background-color: #679efb !important*/
+    border: none !important;
+    max-height: 56px;
+    border-radius: 0px !important;
+    background: #52A0FD !important;
+    background: -moz-linear-gradient(left, #52A0FD 0%, #00C9FB 80%, #00C9FB 100%) !important;
+    background: -webkit-linear-gradient(left, #52A0FD 0%, #00C9FB 80%, #00C9FB 100%) !important;
+    background: linear-gradient(to right, #52A0FD 0%, #00C9FB 80%, #00C9FB 100%) !important;
+}
+
+    .header_top .collapse li a {
+        color: #ffff;
+        transition: background 1s;
+        font-weight: 500;
+    }
+
+        .header_top .collapse li a:hover {
+            color: rgb(255, 238, 0);
+        }
+
+    .header_top .collapse li .menu_active {
+        color: rgb(255, 238, 0);
+    }
+
+.footer {
+
+    height: 50px;
+    line-height: 50px;
+    color: #ffff;
+    text-align: center;
+    background: #52A0FD !important;
+    background: -moz-linear-gradient(left, #52A0FD 0%, #00C9FB 80%, #00C9FB 100%) !important;
+    background: -webkit-linear-gradient(left, #52A0FD 0%, #00C9FB 80%, #00C9FB 100%) !important;
+    background: linear-gradient(to right, #52A0FD 0%, #00C9FB 80%, #00C9FB 100%) !important;
+}
+
+    .footer p {
+        margin: 0px !important;
+    }
+
+/*====================== */
+
+/* hien dinh */
+#myclass{
+    width:70%;
+    margin:auto
+}
+#file {
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.myclass-title {
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.class-type {
+    background-color: #f9f3f3f7;
+    margin-top: 20px;
+}
+
+.container {
+    padding: 0px !important;
+}
+
+.nav-tabs li a {
+    font-size: 20px;
+}
+
+.container a {
+    color: gray !important;
+}
+
+    .container a:hover {
+        text-decoration: none !important;
+        color: black !important;
+    }
+
+.class-type-time p {
+    text-align: right;
+}
+
+.jumbotron {
+    background: #4285F4 !important;
+    margin-top: 10px;
+    margin-bottom: 0px !important;
+}
+
+.number-session {
+    text-align: right;
+}
+/*MYCLASS-CLASS*/
+
+#class .class-type a {
+    color: black;
+}
+
+    #class .class-type a:hover {
+        text-decoration: none;
+    }
+
+/*FEEDBACK-*/
+/* #combobox-feedback,#combobox-feedbackteacher{
+  width: 100%;
+} */
+
+.modal-content {
+    margin-top: 20%;
+}
+
+#feedback .title {
+    color: gray;
+    margin-bottom: 30px;
+}
+
+#feedback .new-feedback a {
+    color: green;
+}
+
+#feedback .new-feedback {
+    text-align: right;
+}
+
+#feedback .cb-teacher .form-control {
+    width: 100% !important;
+}
+
+#feedback .col-xs-12 {
+    margin-top: 10px;
+}
+
+#feedback .list-feedback {
+    margin-top: 20px;
+}
+
+    #feedback .list-feedback table {
+        width: 100%;
+    }
+
+@media only screen and (max-width:767px) {
+
+    #feedback-content-input {
+        margin-bottom: 15px;
+    }
+    #myclass{
+        width:90%;
+    }
+}
+@media only screen and (min-width:992px) {
+    #feedback {
+        width: 70%;
+        margin: auto;
+    }
+    #feedback-content-input {
+        margin-bottom: 15px;
+    }
+}
+
+/*---TOEIC-LESSON*---*/
+
+#toeic-lesson1 .tl-vacation-register {
+    text-align: right;
+}
+
+    #toeic-lesson1 .tl-vacation-register a {
+        color: green;
+    }
+#toeic-lesson1 .detail-lesson {
+    width: 80%;
+    margin: auto;
+}
+#toeic-lesson1 .border {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#toeic-lesson1 .status {
+    float: right;
+    color: green;
+}
+
+#toeic-lesson1 .attendance {
+    color: #00bdbd;
+}
+
+#toeic-lesson1 .group-content {
+    margin-top: 10px;
+}
+
+    #toeic-lesson1 .group-content .border {
+        margin: 0;
+        background-color: #eef3f9;
+    }
+
+#toeic-lesson1 .btn-submit .btn-send {
+    border: none;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#toeic-lesson1 .title {
+    margin-bottom: 30px;
+}
+
+.class-type .row {
+    margin: 0px !important;
+    padding: 0px 15px !important;
+}
+
+.row .row-top {
+    padding-top: 10px !important;
+}
+
+/*---Web---*/
+
+@media only screen and (min-width: 769px) {
+    #class {
+        width: 70%;
+        margin: auto;
+    }
+
+    #toeic-lesson1 {
+        width: 70%;
+        margin: auto;
+    }
+
+        #toeic-lesson1 .border {
+            padding: 20px;
+        }
+}
+
+.class-type-time p {
+    font-weight: 500;
+}
+
+#toeic-lesson1 .border {
+    border-radius: 5px;
+}
+#toeic-lesson1 .tl-vacation-register {
+    width: 80%;
+    margin: auto;
+}
+/*---Phone---*/
+
+@media only screen and (max-width: 767px) {
+    #feedback .btn {
+        font-size: 3vw !important;
+    }
+
+    #feedback .nav a {
+        font-size: 5vw !important;
+    }
+
+    #toeic-lesson1 {
+        width: 100% !important;
+    }
+
+        #toeic-lesson1 .title h2 {
+            font-size: 20px !important;
+        }
+
+        #toeic-lesson1 .tl-vacation-register a {
+            font-size: 10px !important;
+        }
+
+    .number-session {
+        font-size: 13px !important;
+    }
+
+    .col-6, .col-5, .col-7, .col-12 {
+        padding: 0px !important;
+    }
+
+    .nav-tabs a {
+        font-size: 3vw !important;
+    }
+
+    .class-type-time p {
+        font-size: 3vw !important;
+    }
+
+    .class-type h5 {
+        font-size: 12px !important;
+    }
+    #toeic-lesson1 .detail-lesson, #toeic-lesson1 .tl-vacation-register {
+        width: 100%;
+    }
+ 
+}
+
+/*====================== */
+
+/* HieuTran */
+
+#content {
+    min-height: calc(100vh - 56px - 20px - 50px);
+    margin: 10px 0px;
+}
+
+.tabbar_buttom {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: #679efb;
+    border-top: 10px solid #ffff;
+    z-index:999;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        display: none;
+    }
+
+    .li-link {
+        display: none;
+    }
+
+    .header_top .collapse {
+        z-index: 999999999999999999999;
+        position: absolute;
+        right: 0;
+        display: inline !important;
+    }
+
+    .tabbar_buttom {
+        display: inline;
+    }
+
+    #content {
+        padding-bottom: 60px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important; 
+    }
+}
+
+.tabbar_buttom .list_icon {
+    justify-content: space-between;
+    display: flex;
+    line-height: 60px;
+    /* margin: 0 auto; */
+    padding: 0px 16px;
+    background: linear-gradient(to bottom, #52A0FD 0%, #23b8fc 80%, #00C9FB 100%) !important;
+}
+
+    .tabbar_buttom .list_icon .li-link {
+        display: inline-table;
+    }
+
+        .tabbar_buttom .list_icon .li-link a {
+            color: #ffff;
+            padding: 0px;
+        }
+
+            .tabbar_buttom .list_icon .li-link a i {
+                font-size: 1.8em;
+            }
+
+        .tabbar_buttom .list_icon .li-link .active {
+            color: rgb(255, 238, 0);
+            padding: 0px;
+        }
+
+/* Hieutran learning */
+
+#learning {
+    width: 70%;
+    margin: auto;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+#content .learning .title {
+    text-align: center;
+    color: gray;
+    padding-bottom: 5px;
+}
+
+    #content .learning .title img {
+        width: 60px;
+    }
+
+#content .learning .name_class {
+    margin-bottom: 20px;
+}
+
+/*===== Vertical Timeline =====*/
+
+#conference-timeline {
+    position: relative;
+    /* max-width: 920px; */
+    width: 100%;
+    /* margin-left: 35px; */
+    margin-top: 0px;
+}
+
+    #conference-timeline .timeline-start, #conference-timeline .timeline-end {
+        display: table;
+        border: 2px solid #4285f4;
+        background: #ffffff;
+        padding: 15px 20px;
+        color: #5f5f5f;
+        width: 100%;
+        text-align: center;
+        border-radius: 100%;
+        box-shadow: 1px black;
+        width: 62px;
+        height: 60px;
+        margin-left: 7px;
+    }
+
+    #conference-timeline .conference-center-line {
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        top: 0;
+        left: 39px;
+        /* margin-left: -2px; */
+        background: #4285F4;
+        z-index: -1;
+    }
+
+    #conference-timeline .conference-timeline-content {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+.timeline-article {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+    .timeline-article .content-left-container, .timeline-article .content-right-container {
+        /* max-width: 44%; */
+        width: 100%;
+    }
+
+    .timeline-article .timeline-author {
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #242424;
+        text-align: right;
+    }
+
+    .timeline-article .content-left, .timeline-article .content-right {
+        position: relative;
+        width: auto;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .03);
+        padding: 15px 30px;
+        width: 100%;
+    }
+
+    .timeline-article .content_acticle {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 80px;
+    }
+
+        .timeline-article .content_acticle a {
+            text-decoration: none;
+        }
+
+    .timeline-article p {
+        margin: 0 0 0 0px;
+        padding: 0;
+        font-weight: 400;
+        color: #242424;
+        font-size: 0.8em;
+        line-height: 24px;
+        position: relative;
+    }
+
+    .timeline-article .content-left-container {
+        float: left;
+    }
+
+    /* .timeline-article .content-left:before,
+  .timeline-article .content-right:before{
+    position: absolute;
+    top: 20px;
+    font-size: 23px;
+    font-family: "Font Awesome 5 Free";
+    color: #dddddd;
+  }
+
+  .timeline-article .content-right:before {
+    content: "\f0d9";
+    left: -10px;
+  }  */
+
+    .timeline-article .meta-date-done {
+        position: absolute;
+        top: 0;
+        left: 39px;
+        width: 62px;
+        height: 62px;
+        margin-left: -31px;
+        color: #fff;
+        border-radius: 100%;
+        background: red;
+    }
+
+    .timeline-article .meta-date-doing {
+        position: absolute;
+        top: 0;
+        left: 39px;
+        width: 62px;
+        height: 62px;
+        margin-left: -31px;
+        color: #fff;
+        border-radius: 100%;
+        background: green;
+    }
+
+    .timeline-article .meta-date-expected {
+        position: absolute;
+        top: 0;
+        left: 39px;
+        width: 62px;
+        height: 62px;
+        margin-left: -31px;
+        color: #fff;
+        border-radius: 100%;
+        background: rgb(134, 134, 134);
+    }
+
+    .timeline-article .meta-date .date, .timeline-article .meta-date .month {
+        display: block;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    .timeline-article .meta-date .date {
+        line-height: 60px;
+    }
+
+    .timeline-article .meta-date .month {
+        font-size: 18px;
+        line-height: 10px;
+    }
+
+    .timeline-article .content-right .detail-timeline-step {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .timeline-article .content-right .detail-timeline-step .tile-step {
+            color: #4285F4;
+        }
+
+        .timeline-article .content-right .detail-timeline-step .status {
+            font-weight: 600;
+        }
+
+        .timeline-article .content-right .detail-timeline-step .class, .timeline-article .content-right .detail-timeline-step .date-time {
+            color: red;
+        }
+
+/*===== // Vertical Timeline =====*/
+
+/*===== Resonsive Vertical Timeline =====*/
+
+@media only screen and (max-width: 768px) {
+    #learning {
+        width: 100%;
+    }
+
+    #conference-timeline {
+        margin-left: 0px;
+    }
+
+    .timeline-article .content-right .detail-timeline-step {
+        display: block;
+    }
+
+    #conference-timeline .timeline-start, #conference-timeline .timeline-end {
+        width: 42px;
+        height: 41px;
+        margin-left: 5px;
+    }
+
+    .timeline-article .meta-date-done, .timeline-article .meta-date-doing, .timeline-article .meta-date-expected {
+        left: 37px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .timeline-article .meta-date .date {
+        line-height: 40px;
+    }
+
+    #conference-timeline .conference-center-line {
+        left: 25px;
+    }
+
+    .timeline-article .content-right .detail-timeline-step .tile-step {
+        margin-bottom: 0px;
+    }
+
+    .timeline-article .content-left, .timeline-article .content-right {
+        padding: 5px 10px;
+    }
+
+    .timeline-article .content_acticle {
+        padding-left: 57px;
+    }
+}
+
+/*===== // Resonsive Vertical Timeline =====*/
+
+/* ==================*/
+
+/*===== // detail class =====*/
+
+
+
+#detail-class {
+    width: 70%;
+    margin: auto;
+}
+
+    #detail-class #schedule .class-type {
+        background-color: #ffff;
+    }
+
+    #detail-class #conference-timeline .conference-center-line {
+        z-index: 0;
+        height: 100%;
+    }
+
+    #detail-class #conference-timeline .detail-timeline-step .map-teacher {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #detail-class #conference-timeline .detail-timeline-step .tile-lesson {
+        margin: 0px;
+        font-size: 1.2em;
+    }
+
+@media only screen and (max-width: 768px) {
+    #detail-class {
+        width: 100%;
+    }
+
+        #detail-class .row {
+            margin: 0 auto !important;
+        }
+
+        #detail-class #conference-timeline .detail-timeline-step .time {
+            display: flex;
+            justify-content: space-between;
+        }
+
+    #conference-timeline .conference-timeline-content {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+#detail-class #grid-test .dc-file-incon {
+    color: #7b7b7b;
+}
+
+#detail-class #grid-test .dc-file-test {
+    font-weight: 600;
+    color: #679efb;
+    margin-left: 10px;
+}
+
+
+
+/*  STYLE  canlender hieutran  */
+/*  Calendar wrapper */
+
+/*  ========================== */
