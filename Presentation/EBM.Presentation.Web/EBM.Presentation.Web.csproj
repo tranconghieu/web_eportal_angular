@@ -72,6 +72,7 @@
   <ItemGroup>
     <Content Include="Content\CSS\style.css" />
     <Content Include="Content\images\135-512.png" />
+    <Content Include="Content\images\aP2.png" />
     <Content Include="Content\images\cashback-512 - Copy.png" />
     <Content Include="Content\images\image-class.jpg" />
     <Content Include="Content\images\images.png" />
@@ -5650,7 +5651,12 @@
     <Content Include="pages\Dashboard\Dashboard.html" />
     <Content Include="pages\Dashboard\DashboardController.js" />
     <Content Include="pages\class\class.html" />
+    <Content Include="pages\learning-result\Detail-ResultController.js" />
+    <Content Include="pages\learning-result\learning-result.html" />
+    <Content Include="pages\learning-result\Learning-ResultController.js" />
     <Content Include="pages\login\login.html" />
+    <Content Include="pages\vacation-register\vacation-register.html" />
+    <Content Include="pages\vacation-register\Vacation-RegisterController.js" />
     <Content Include="Scripts\Config\app.js" />
     <Content Include="Scripts\Config\config.js" />
     <Content Include="Scripts\Config\main.js" />

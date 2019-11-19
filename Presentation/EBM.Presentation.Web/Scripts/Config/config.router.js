@@ -94,6 +94,48 @@ angular.module('app')
                   //controllerAs: null,
 
               })
+              .state('app.learning-result', {
+                  url: '/learning-result',
+                  templateUrl: '/pages/learning-result/learning-result.html?v=' + versionData,
+                  data: { pageTitle: 'Home' },
+                  controller: 'Learning-ResultController',
+                  //controllerAs: null,
+                  resolve: {
+                      deps: ['$ocLazyLoad',
+                          function ($ocLazyLoad) {
+                              return $ocLazyLoad.load(['pages/learning-result/Learning-ResultController.js?v=' + versionData]);
+                          }]
+                  }
+
+              })
+              .state('app.detail-result', {
+                  url: '/detail-result',
+                  templateUrl: '/pages/learning-result/detail-result.html?v=' + versionData,
+                  data: { pageTitle: 'Home' },
+                  controller: 'Detail-ResultController',
+                  resolve: {
+                      deps: ['$ocLazyLoad',
+                          function ($ocLazyLoad) {
+                              return $ocLazyLoad.load(['pages/learning-result/Detail-ResultController.js?v=' + versionData]);
+                          }]
+                  }
+
+              })
+              .state('app.vacation-register', {
+                  url: '/vacation-register',
+                  templateUrl: '/pages/vacation-register/vacation-register.html?v=' + versionData,
+                  data: { pageTitle: 'Home' },
+                  controller: 'Vacation-RegisterController',
+                  //controllerAs: null,
+                  //template: '<h3>xin chao</h3>',
+                  resolve: {
+                      deps: ['$ocLazyLoad',
+                          function ($ocLazyLoad) {
+                              return $ocLazyLoad.load(['pages/vacation-register/Vacation-RegisterController.js?v=' + versionData]);
+                          }]
+                  }
+              })
+
               .state('access', {
                   url: '/access',
                   template: '<div ui-view class="fade-in-right-big smooth"></div>'
